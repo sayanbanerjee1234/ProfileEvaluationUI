@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { InterviewerRegisterComponent } from './interviewer-register/interviewer-register.component';
 import { InterviewerHomeComponent } from './interviewer-home/interviewer-home.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 
@@ -13,10 +14,14 @@ const routes: Routes = [
     path:'interviewer', component:InterviewerHomeComponent,
   },
   {
+    path:'interviewer-register', component:InterviewerRegisterComponent,
+  },  
+  {
     path:'register', component:RegisterComponent,
-  },{
-    path:'login', component:LoginComponent,
   },
+  {
+    path:'login', component:LoginComponent,
+  },  
   {
     path:'**', redirectTo: '/login', pathMatch: 'full'
   },
