@@ -3,3 +3,34 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons.css';
+
+*:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn-violet, .btn-violet:hover {
+    background-color: #4D52B1;
+    border: 1px solid #4D52B1;
+    color: #fff;
+}
+
+.btn-violet:active:focus, .btn-violet:disabled {
+    background-color: #666ab8;
+    border: 1px solid #666ab8;
+    color: #fff;
+}
+
+.btn-purple, .btn-purple:hover {
+    background-color: #9479bf;
+    border: 1px solid #9479bf;
+}
+
+.btn-purple:active:focus, .btn-purple:disabled {
+    background-color: #c6afeb;
+    border: 1px solid #c6afeb;
+}
+
+.table-purple {
+    --bs-table-bg: #c6afeb;
+}

@@ -1,18 +1,18 @@
-<nav class="navbar navbar-expand-lg navbar-light py-0" style="background-color: #e3f2fd;">
-    <a class="navbar-brand" type="button">
+<nav class="navbar navbar-expand-lg navbar-light py-0 mt-3" style="background-color: #c6afeb;">
+    <!-- <a class="navbar-brand" type="button">
         <img src="../../assets/brightstarfull.png" width="50" height="40" class="d-inline-block align-top" alt="">
         Brightstar Care
-      </a>
+      </a> -->
     <button class="navbar-toggler" (click)="toggleNavBar()" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
     <div class="collapse navbar-collapse" [class.collapse]="navbarCollapsed" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active pb-2" style="background-color: #b8cfe0;">
+        <li class="nav-item active py-1" style="background-color: #9479bf;">
           <a class="nav-link" type="button">Home</a>
         </li>
-        <li class="nav-item active" >
+        <li class="nav-item active py-1" >
             <a class="nav-link" type="button" ngbPopover="New notification for candidate" popoverTitle="1 New Notification">Notification</a>
           </li>
       </ul>
@@ -20,20 +20,18 @@
         <div class="form-outline my-1">
           <input type="search" id="form1" class="form-control" placeholder="Search" />
         </div>
-        <button type="button" class="btn btn-primary my-1">
+        <button type="button" class="btn-purple btn my-1">
           <i class="bi bi-search" ></i>
         </button>
-
-
       </div>
       <label class="border border-dark p-1 m-1" style="width:250px"><h6>Total Candidates: {{candidates.length}}</h6></label>
       <a ngbPopover="Interviewer" triggers="mouseenter:mouseleave" popoverTitle="User Type"><h6 class="nav-link px-2" type="button">Sayan Banerjee(Logout)</h6></a>
     </div>
   </nav>
-<div class="table-responsive mt-1">
+<div class="table-responsive mt-3">
 <table class="table table-hover table-bordered table-striped">
     <thead>
-      <tr class="table-primary">
+      <tr class="table-purple">
         <th scope="col">Name</th>
         <th scope="col">Email</th>
         <th scope="col">Phone No</th>
@@ -42,7 +40,7 @@
         <th scope="col">Base Location</th>
         <th scope="col">Experience</th>
         <th scope="col">Accenture Level</th>
-        <th scope="col">Progress</th>
+        <th scope="col">Status</th>
         <th scope="col">Comments</th>
       </tr>
     </thead>
@@ -56,7 +54,7 @@
         <td>{{canditate.Base}}</td>
         <td>{{canditate.Experience}}</td>
         <td>{{canditate.Level}}</td>
-        <td><a type="button" class="text-primary">{{canditate.Progress}}</a></td>
+        <td><a type="button" class="text-primary">{{canditate.Status}}</a></td>
         <td><a type="button" class="text-primary">{{canditate.Comments}}</a></td>
       </tr>
     </tbody>

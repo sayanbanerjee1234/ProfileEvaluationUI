@@ -1,6 +1,6 @@
 <section class="vh-100">
   <div class="container-fluid mt-3">    
-    <h3 class="text-center">Register as Admin</h3>
+    <h3 class="text-center">Sign up as Admin</h3>
     <div class="row d-flex justify-content-center align-items-center mt-4">
       <div class="col-md-9 col-lg-6 col-xl-6">
         <form>
@@ -41,10 +41,12 @@
             <input type="password" id="confirm-password" class="form-control form-control-sm"
               placeholder="*Confirm Password" />
           </div>
-          <!-- Submit button -->
+          <!-- Cancel & Submit buttons -->
           <div>
-            <button type="button" class="btn btn-primary btn-md"
-            style="float: right; margin-top: .5rem; padding-left: 3.5rem; padding-right: 3.5rem;" (click)="registerAdmin()">Submit</button>
+            <button type="button" class="btn btn-secondary btn-md custom-btn"
+              style="float: left;" routerLink="/login">Cancel</button>
+            <button type="button" class="btn btn-violet btn-md custom-btn"
+            style="float: right;" (click)="registerAdmin()">Submit</button>
           </div>
         </form>
       </div>

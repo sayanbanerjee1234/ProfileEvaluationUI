@@ -15,7 +15,7 @@ export class InterviewerHomeComponent {
     Base: 'Kolkata',
     Experience: '4.5yrs',
     Level: 'SSE',
-    Progress: 'Yet To Start',
+    Status: 'Yet To Start',
     Comments: 'Rescheduled'
   },
   {
@@ -27,7 +27,7 @@ export class InterviewerHomeComponent {
     Base: 'Kolkata',
     Experience: '4.5yrs',
     Level: 'SSE',
-    Progress: 'Yet To Start',
+    Status: 'Yet To Start',
     Comments: 'Rescheduled'
   },
   {
@@ -39,7 +39,7 @@ export class InterviewerHomeComponent {
     Base: 'Kolkata',
     Experience: '4.5yrs',
     Level: 'SSE',
-    Progress: 'Yet To Start',
+    Status: 'Yet To Start',
     Comments: 'Rescheduled'
   },
   {
@@ -51,7 +51,7 @@ export class InterviewerHomeComponent {
     Base: 'Kolkata',
     Experience: '4.5yrs',
     Level: 'SSE',
-    Progress: 'Yet To Start',
+    Status: 'Yet To Start',
     Comments: 'Rescheduled'
   },
   {
@@ -63,7 +63,7 @@ export class InterviewerHomeComponent {
     Base: 'Kolkata',
     Experience: '4.5yrs',
     Level: 'SSE',
-    Progress: 'Yet To Start',
+    Status: 'Yet To Start',
     Comments: 'Rescheduled'
   },
   {
@@ -75,7 +75,7 @@ export class InterviewerHomeComponent {
     Base: 'Kolkata',
     Experience: '4.5yrs',
     Level: 'SSE',
-    Progress: 'Yet To Start',
+    Status: 'Yet To Start',
     Comments: 'Rescheduled'
   },
   {
@@ -87,7 +87,7 @@ export class InterviewerHomeComponent {
     Base: 'Kolkata',
     Experience: '4.5yrs',
     Level: 'SSE',
-    Progress: 'Yet To Start',
+    Status: 'Yet To Start',
     Comments: 'Rescheduled'
   },
   {
@@ -99,7 +99,7 @@ export class InterviewerHomeComponent {
     Base: 'Kolkata',
     Experience: '4.5yrs',
     Level: 'SSE',
-    Progress: 'Yet To Start',
+    Status: 'Yet To Start',
     Comments: 'Rescheduled'
   },
   {
@@ -111,7 +111,7 @@ export class InterviewerHomeComponent {
     Base: 'Kolkata',
     Experience: '4.5yrs',
     Level: 'SSE',
-    Progress: 'Yet To Start',
+    Status: 'Yet To Start',
     Comments: 'Rescheduled'
   },
   {
@@ -123,7 +123,7 @@ export class InterviewerHomeComponent {
     Base: 'Kolkata',
     Experience: '4.5yrs',
     Level: 'SSE',
-    Progress: 'Yet To Start',
+    Status: 'Yet To Start',
     Comments: 'Rescheduled'
   }
 ]

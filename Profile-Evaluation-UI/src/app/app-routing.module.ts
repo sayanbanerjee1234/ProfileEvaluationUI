@@ -8,16 +8,16 @@ import { AdminHomeComponent } from './admin-home/admin-home.component';
 
 const routes: Routes = [
   {
-    path:'admin', component:AdminHomeComponent,
+    path:'admin-dashboard', component:AdminHomeComponent,
   },
   {
-    path:'interviewer', component:InterviewerHomeComponent,
+    path:'interviewer-dashboard', component:InterviewerHomeComponent,
   },
   {
     path:'interviewer-register', component:InterviewerRegisterComponent,
   },  
   {
-    path:'register', component:RegisterComponent,
+    path:'admin-register', component:RegisterComponent,
   },
   {
     path:'login', component:LoginComponent,

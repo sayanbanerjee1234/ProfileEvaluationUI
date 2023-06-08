@@ -1,1 +1,96 @@
-<p>admin-home works!</p>
+<nav class="navbar navbar-expand-lg navbar-light py-0 mt-3" style="background-color: #c6afeb;">
+  <button class="navbar-toggler" (click)="toggleNavBar()" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" [class.collapse]="navbarCollapsed" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active py-1" style="background-color: #9479bf; border-right: 1px solid #5e4586;">
+        <a class="nav-link" type="button" (click)="toggleMenu('candidate')">Candidate</a>
+      </li>
+      <li class="nav-item active py-1" style="background-color: #9479bf; border-right: 1px solid #5e4586;">
+        <a class="nav-link" type="button" (click)="toggleMenu('interviewer')">Interviewer</a>
+      </li>
+      <li class="nav-item active py-1">
+        <a class="nav-link" type="button" ngbPopover="New notification for candidate" popoverTitle="1 New Notification">Notification</a>
+      </li>
+    </ul>
+    <div class="input-group float-right">
+      <div class="form-outline my-1">
+        <input type="search" id="form1" class="form-control" placeholder="Search" />
+      </div>
+      <button type="button" class="btn btn-purple my-1">
+        <i class="bi bi-search" ></i>
+      </button>
+    </div>
+    <label class="border border-dark p-1 m-1" style="width:330px"><h6>Total Candidates: {{candidates.length}}</h6></label>
+    <a ngbPopover="Admin" triggers="mouseenter:mouseleave" popoverTitle="User Type"><h6 class="nav-link px-2" type="button">Sayan Banerjee(Logout)</h6></a>
+  </div>
+</nav>
+  
+<div *ngIf="isCandidate" class="table-responsive mt-3">
+  <table class="table table-hover table-bordered table-striped">
+    <thead>
+      <tr class="table-purple">
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone No</th>
+        <th scope="col">SkillSet</th>
+        <th scope="col">Enterprise ID</th>
+        <th scope="col">Base Location</th>
+        <th scope="col">Experience</th>
+        <th scope="col">Accenture Level</th>
+        <th scope="col">Status</th>
+        <th scope="col">Comments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let canditate of candidates">
+        <td scope="row">{{canditate.Name}}</td>
+        <td>{{canditate.Email}}</td>
+        <td>{{canditate.Phone}}</td>
+        <td>{{canditate.SkillSet}}</td>
+        <td>{{canditate.id}}</td>
+        <td>{{canditate.Base}}</td>
+        <td>{{canditate.Experience}}</td>
+        <td>{{canditate.Level}}</td>
+        <td><a type="button" class="text-primary">{{canditate.Status}}</a></td>
+        <td><a type="button" class="text-primary">{{canditate.Comments}}</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div *ngIf="isInterviewer" class="table-responsive mt-3">
+  <table class="table table-hover table-bordered table-striped">
+    <thead>
+      <tr class="table-purple">
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone No</th>
+        <th scope="col">SkillSet</th>
+        <th scope="col">Base Location</th>
+        <th scope="col">DU Name</th>
+        <th scope="col">Accenture Level</th>
+        <th scope="col"></th>        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let interviewer of interviewers">
+        <td scope="row">{{interviewer.Name}}</td>
+        <td>{{interviewer.Email}}</td>
+        <td>{{interviewer.Phone}}</td>
+        <td>{{interviewer.SkillSet}}</td>
+        <td>{{interviewer.Base}}</td>
+        <td>{{interviewer.du}}</td>
+        <td>{{interviewer.Level}}</td>
+        <td style="padding: 0;">
+          <a type="button" class="btn btn-purple" style="margin: 5px 10px; padding: 0.1rem 0.5rem;">
+            <i class="bi bi-trash3" ></i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
